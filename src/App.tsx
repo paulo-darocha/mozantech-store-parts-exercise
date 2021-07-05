@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import useService from './hooks/useService';
+import PartDetail from './partsStore/PartDetail';
+import Store from './partsStore/PartsStore';
 
 function App() {
+  const { loadParts } = useService();
+
+  useEffect(() => {
+    loadParts();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/part/:name" component={PartDetail} />
+        <Route path="/" component={Store} />
+      </Switch>
     </div>
   );
 }

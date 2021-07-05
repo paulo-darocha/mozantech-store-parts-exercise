@@ -1,0 +1,93 @@
+.Container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.PartsWrapper {
+  font-family: "Oswald";
+  color: black;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  border: 1px solid black;
+  background-color: #eee;
+  border-radius: 5px;
+  align-items: center;
+  margin: 1em;
+  padding: 0  1em;
+  justify-content: space-between;
+}
+
+.PartsWrapper:hover {
+  border: 1px solid red;
+  background-color: #999;
+  color: #ebebeb;
+  font-size: 1.1em;
+  
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.SearchBar {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 1em;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PartWrapper {
+  font-family: "Oswald";
+  color: black;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  border: 1px solid black;
+  align-items: center;
+  margin: 1em;
+  padding: 0  1em;
+  justify-content: space-between;
+}
+
+.Search {
+  border: 1px solid #888;
+  padding: .2em;
+  border-radius: 5px;
+}
+
+input[type="search"] {
+  border: none;
+  font-size: 1em;
+  width: auto;
+}
+
+input[type="search"]:focus {
+  outline: none;
+  font-size: 1em;
+}
+
+select {
+  font-size: 1em;
+  padding: .2em;
+}
+
+button {
+  padding: .2em;
+}
+
+.Navigation {
+  background-color: darkblue;
+  margin: auto;
+  padding: .8em;
+  color: #ebebeb;
+}
+
+.Spin {
+  color: #555;
+  padding: 1em;
+}
